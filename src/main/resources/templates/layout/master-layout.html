@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+<head>
+    <th:block th:replace="~{/fragment/meta}"></th:block>
+    <link rel=icon th:href="@{/resources/img/favicon.png}" sizes="20x20" type="image/png">
+    <title>NextPage-Blog, Magazine Html Template</title>
+    <th:block th:replace="~{/fragment/style}"></th:block>
+</head>
+<body>
+        <div th:replace="~{/fragment/header}"></div>
+        <div th:replace="~{/fragment/banner}"></div>
+        <div th:replace="~{/fragment/trending}"></div>
+        <div th:replace="~{/fragment/latest}"></div>
+        <div th:replace="~{/fragment/grid}"></div>
+        <main layout:fragment="main-content">
+
+        </main>
+        <div th:replace="~{/fragment/back}"></div>
+        <div th:replace="~{ /fragment/footer}"></div>
+        <div th:replace="~{ /fragment/script}"></div>
+</body>
+</html>
